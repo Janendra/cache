@@ -14,5 +14,6 @@ public class App {
 		String x = a.get("key2");
 		System.out.println(x);
 		System.out.println("Hello World!");
+		a.close();
 	}
 }

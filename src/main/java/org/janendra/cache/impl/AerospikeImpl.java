@@ -49,6 +49,11 @@ public class AerospikeImpl implements ICacheService {
 		client.delete(null, generateKey(key));
 	}
 
+	@Override
+	public void close() {
+		client.close();
+	}
+
 	private ClientPolicy getClientPolicy() {
 		ClientPolicy clientPolicy = new ClientPolicy();
 		clientPolicy.failIfNotConnected = true;

@@ -10,4 +10,6 @@ public interface ICacheService {
 
 	<T> void delete(String key);
 
+	void close();
+
 }
