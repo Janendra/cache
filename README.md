@@ -1,1 +1,1 @@
-mvn exec:java  -Dexec.mainClass=org.janendra.cache.App -DaerospikeHosts=ip:port
+mvn exec:java  -Dexec.mainClass=org.janendra.cache.App -DcacheType=AEROSPIKE -DaerospikeHosts=ip:port
