@@ -41,6 +41,8 @@ public class AerospikeImpl implements ICacheService {
 	@Override
 	public <T> T get(String key) {
 		Record record = client.get(null, generateKey(key));
+		if (record == null)
+			return null;
 		return (T) record.bins.get(BIN_NAME);
 	}
 
