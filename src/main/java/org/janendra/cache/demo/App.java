@@ -1,6 +1,8 @@
-package org.janendra.cache;
+package org.janendra.cache.demo;
 
+import org.janendra.cache.ICacheService;
 import org.janendra.cache.enums.CacheType;
+import org.janendra.cache.factory.CacheFactory;
 import org.janendra.cache.model.Customer;
 
 /**
